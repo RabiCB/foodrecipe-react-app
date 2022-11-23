@@ -1,0 +1,115 @@
+
+
+.recipe-card{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0.4rem;
+    background-color: whitesmoke;
+}
+
+.card-image{
+    width:25rem;
+    border-radius: 4px;
+
+}
+
+.info{
+    
+    display: flex;
+    align-items: center;
+    width:25rem;
+    height: 3rem;
+    gap:1.4rem;
+    justify-content: center;
+    margin-bottom: 0.7rem;
+}
+
+.tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:black;
+    background-color:aqua ;
+    height: 1.6rem;
+    border-radius: 4px;
+    width:6rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    
+}
+.tag:hover{
+    color:white;
+    background-color: #333;
+}
+
+.info>h4{
+    color:#665c5c;
+
+
+}
+.info>h4:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+}
+.info>h3{
+    border-radius: 4px;
+    background-color: #333;
+    color:white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 2.8rem;
+    padding-left:0.3rem;
+    padding-right: 0.3rem;
+
+}
+.info>h3:hover{
+    background-color: rgb(85, 78, 78);
+    color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width:720px){
+    .info>h3{
+        font-size: 1rem;
+        
+    }
+    .info{
+        display: flex;
+        gap:1rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .card-image{
+        width:18rem;
+    }
+    .tag{
+        font-size:0.6rem ;
+        width:4.4rem;
+    }
+    .info>h3{
+        font-size: 0.7rem;
+        height: 2rem;
+        width:5rem;
+        padding: 0.4rem 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+    }
+    .info>h4{
+        font-size: 0.6rem;
+    }
+    .info{
+        width:18rem;
+        display: flex;
+        gap: 1rem;
+        
+    }
+}
